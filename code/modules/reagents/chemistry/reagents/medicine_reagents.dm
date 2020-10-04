@@ -1359,7 +1359,6 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 /datum/reagent/medicine/healing_powder/on_mob_life(mob/living/carbon/M)
 	M.adjustFireLoss(-3*REM)
 	M.adjustBruteLoss(-3*REM)
-	M.hallucination = max(M.hallucination, 5)
 	. = 1
 	..()
 
